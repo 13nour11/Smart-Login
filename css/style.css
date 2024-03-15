@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #24353f;
+    --secondary-color: #17a2b8;
+    --focus-color: #80bdff;
+    --shadow-color: rgba(0, 0, 0, 1);
+    --placeholder-gray-color: #b6b6b6;
+}
+body{
+    background-color: var(--main-color);
+    font-family: "Titillium Web", sans-serif;
+}
+.inner,
+nav,
+.msg .container{
+    box-shadow: -5px 2px 54px -9px var(--shadow-color) !important;
+}
+input{
+    background-color: transparent !important;
+}
+input:focus{
+    box-shadow: none !important;
+    border-color: var(--focus-color) !important ;
+}
+input::placeholder{
+    color: var(--placeholder-gray-color) !important;
+}
+h1{
+    color: var(--secondary-color);
+}
+p a:hover{
+    text-decoration: underline !important;
+
+}
