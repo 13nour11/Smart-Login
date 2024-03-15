@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- bootstrap5 syle -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="m-0">
+    <div class="content my-5">
+        <!-- note that: class 'container' is mx-auto and w-80 -->
+        <div class="mx-auto d-flex justify-content-center align-items-center flex-column w-75 p-5 inner">
+            <h1>Smart Login System</h1>
+            <input type="email" name="Email" id="email" class="form-control my-3 text-white" placeholder="Enter your email"/>
+            <input type="password" name="Password" id="password" placeholder="Enter password" class="form-control my-3 text-white"/>
+            <p id="errorLogin" class="error d-none text-danger">incorrect email or password</p>
+            <button class="btn btn-outline-info w-100 my-3" onclick="signin()">Login</button>
+            <!-- <a href="home.html" class="text-decoration-none"></a> -->
+            <p class="text-white">Don't have an account? <a href="signup.html" class="text-white text-decoration-none">Sign Up</a></p>
+        </div>
+    </div>
+    
+    <!-- bootstrap5 js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- js code -->
+    <script src="js/index.js"></script>
+</body>
+</html>

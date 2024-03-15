@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- bootstrap5 syle -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="m-0">
+    <div class="content my-5">
+        <!-- note that: class 'container' is mx-auto and w-80 -->
+        <div class="mx-auto d-flex justify-content-center align-items-center flex-column w-75 p-5 inner">
+            <h1 class="">Smart Login System</h1>
+            <input type="text" name="Name" id="Name" class="form-control my-3 text-white" placeholder="Enter your name"/>
+            <input type="email" name="Email" id="Email" class="form-control my-3 text-white" placeholder="Enter your email"/>
+            <input type="password" name="Password" id="Password" placeholder="Enter password" class="form-control my-3 text-white"/>
+            <p id="error" class="error d-none text-danger">All inputs is required</p>
+            <p id="repeat" class="error d-none text-danger">email is already exited</p>
+            <p id="success" class="error d-none text-success">Congratulations!</p>
+            <button class="btn btn-outline-info w-100 my-3" onclick="addSignUp()">Login</button>
+            <p class="text-white">Don't have an account? <a href="index.html" class="text-white text-decoration-none">Signin</a></p>
+        </div>
+    </div>
+    
+    <!-- bootstrap5 js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- js code -->
+    <script src="js/index.js"></script>
+</body>
+</html>
